@@ -7,12 +7,9 @@ import {
 } from '@material-ui/core/';
 
 const styles = theme => ({
-  button: {
+  root: {
     borderRadius: theme.spacing.unit * 4,
-    color: theme.palette.common.white,
-    '&:focus,&:hover': {
-      color: theme.palette.common.white,
-    }
+    boxShadow: 'none',
   },
   left: {
     marginRight: theme.spacing.unit
@@ -26,7 +23,6 @@ function DefaultButton(props) {
   const {
     children,
     classes,
-    color,
     content,
     href,
     icon,
@@ -61,7 +57,7 @@ function DefaultButton(props) {
     <Button
       href={href}
       variant='outlined'
-      className={classes.button}
+      className={classes.root}
       {...otherProps}
     >
       {renderContent}
@@ -71,7 +67,7 @@ function DefaultButton(props) {
 }
 
 DefaultButton.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   classes: PropTypes.object.isRequired,
 };
 
