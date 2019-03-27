@@ -11,6 +11,10 @@ const config = {
 					rel: 'stylesheet',
 					href: 'https://codemirror.net/theme/material.css',
 				},
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+        },
 			],
 		},
 	},
