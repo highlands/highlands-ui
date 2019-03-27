@@ -6,6 +6,8 @@
 /examples/**/.cache
 /tmp
 build
+dist
+.docz
 node_modules
 package-lock.json
 size-snapshot.json
