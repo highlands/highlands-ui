@@ -20,5 +20,8 @@
   "homepage": "https://github.com/highlands/highlands-ui#readme",
   "scripts": {
     "test": "cd ../../ && cross-env NODE_ENV=test mocha 'packages/highlands-ui/**/*.test.js' --exclude '**/node_modules/**'"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.2"
   }
 }
