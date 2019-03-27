@@ -1,25 +1,24 @@
 {
   "name": "@highlands/highlands-ui",
+  "author": "Church of the Highlands",
   "version": "1.0.0",
   "description": "React components based on material-ui.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/highlands/highlands-ui.git"
-  },
   "keywords": [
     "material-ui",
     "react",
     "material",
     "components"
   ],
-  "author": "Church of the Highlands",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/highlands/highlands-ui.git"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/highlands/highlands-ui/issues"
   },
-  "homepage": "https://github.com/highlands/highlands-ui#readme"
+  "homepage": "https://github.com/highlands/highlands-ui#readme",
+  "scripts": {
+    "test": "cd ../../ && cross-env NODE_ENV=test mocha 'packages/material-ui/**/*.test.js' --exclude '**/node_modules/**'"
+  }
 }
