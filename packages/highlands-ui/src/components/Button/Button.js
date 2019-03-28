@@ -9,7 +9,7 @@ import {
 const styles = theme => ({
   root: {
     borderRadius: theme.spacing.unit * 4,
-    boxShadow: 'none',
+    boxShadow: theme.shadows[0],
   },
   left: {
     marginRight: theme.spacing.unit
