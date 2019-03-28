@@ -34,3 +34,20 @@ storiesOf('Button', module)
       variant='contained'
     />
  ))
+  .add('with no border', () => (
+    <Button
+      borderWidth='0px'
+      content='Button'
+      onClick={action('clicked')}
+    />
+ ))
+  .add('with no border and blue icon', () => (
+    <Button
+      borderWidth='0px'
+      content='Button'
+      icon='add'
+      iconBefore
+      iconColor='#1489CB'
+      onClick={action('clicked')}
+    />
+ ))

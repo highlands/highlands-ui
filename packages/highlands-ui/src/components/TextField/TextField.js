@@ -8,9 +8,9 @@ import {
 const styles = theme => ({
   focused: {},
   label: {
-    color: theme.palette.primary.main,
+    color: '#fff',
     '&:focus,&:hover': {
-      color: theme.palette.primary.main,
+      color: '#fff',
     }
   },
   notchedOutline: {},
@@ -23,12 +23,12 @@ const styles = theme => ({
       //paddingRight: theme.spacing.unit * 3,
     },
     '& $notchedOutline': {
-      borderColor: theme.palette.primary.main,
+      borderColor: '#fff',
       '&:focus,&:hover': {
-        borderColor: theme.palette.primary.main,
+        borderColor: '#fff',
       }
     },
-    color: theme.palette.primary.main
+    color: '#fff'
   },
 });
 

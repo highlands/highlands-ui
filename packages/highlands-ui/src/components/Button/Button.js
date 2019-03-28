@@ -8,8 +8,11 @@ import {
 
 const styles = theme => ({
   root: {
-    borderRadius: theme.spacing.unit * 4,
-    boxShadow: theme.shadows[0],
+    borderRadius: '24px',
+    borderColor: '#fff',
+    boxShadow: 'none',
+    color: '#fff',
+    textTransform: 'none',
   },
   left: {
     marginRight: theme.spacing.unit
@@ -21,13 +24,19 @@ const styles = theme => ({
 
 function DefaultButton(props) {
   const {
+    backgroundColor,
+    borderRadius,
+    borderWidth,
     children,
     classes,
+    color,
     content,
+    float,
     href,
     icon,
     iconAfter,
     iconBefore,
+    iconColor,
     ...otherProps
   } = props;
 
@@ -35,7 +44,7 @@ function DefaultButton(props) {
 
   if (icon && iconBefore) {
     renderContent = <React.Fragment>
-      <Icon className={classes.left}>
+      <Icon className={classes.left} style={{color: iconColor}}>
         {icon}
       </Icon>
       {content}
@@ -43,7 +52,7 @@ function DefaultButton(props) {
   } else if (icon && iconAfter) {
     renderContent = <React.Fragment>
       {content}
-      <Icon className={classes.right}>
+      <Icon className={classes.right} style={{color: iconColor}}>
         {icon}
       </Icon>
     </React.Fragment>
@@ -56,6 +65,13 @@ function DefaultButton(props) {
   return (
     <Button
       href={href}
+      style={{
+        color: color,
+        backgroundColor: backgroundColor,
+        borderRadius: borderRadius,
+        borderWidth: borderWidth,
+        float: float,
+      }}
       variant='outlined'
       className={classes.root}
       {...otherProps}
