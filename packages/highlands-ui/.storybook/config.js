@@ -1,5 +1,5 @@
 import React from 'react';
-import { configure, addParameters } from '@storybook/react';
+import { configure, addDecorator, addParameters } from '@storybook/react';
 import {
   createMuiTheme,
   MuiThemeProvider
@@ -11,6 +11,8 @@ addParameters({
     theme: myTheme,
   },
 });
+
+addDecorator((Story) => <Story />);
 
 const req = require
   .context('../src/components', true, /[^/]+\/stories.js$/);
