@@ -12,6 +12,7 @@ const styles = theme => ({
     borderColor: '#fff',
     boxShadow: 'none',
     color: '#fff',
+    fontWeight: 300,
     textTransform: 'none',
   },
   left: {
@@ -32,6 +33,7 @@ function DefaultButton(props) {
     color,
     content,
     float,
+    fontWeight,
     href,
     icon,
     iconAfter,
@@ -71,6 +73,7 @@ function DefaultButton(props) {
         borderRadius: borderRadius,
         borderWidth: borderWidth,
         float: float,
+        fontWeight: fontWeight,
       }}
       variant='outlined'
       className={classes.root}

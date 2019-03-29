@@ -1,9 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
+import { addDecorator, storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { decorator } from '../../../.storybook/config';
 import Button from './Button';
 
 storiesOf('Button', module)
+  .addDecorator(decorator)
 	.add('as default', () => (
     <Button
       content='Button'
@@ -20,6 +22,8 @@ storiesOf('Button', module)
  ))
   .add('as contained', () => (
     <Button
+      backgroundColor='#fff'
+      color='#000'
       content='Button'
       onClick={action('clicked')}
       variant='contained'

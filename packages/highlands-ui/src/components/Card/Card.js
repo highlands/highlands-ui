@@ -18,13 +18,14 @@ const styles = theme => ({
     boxShadow: 'none',
     color: '#fff',
     padding: '6px',
-    '& div[class^="MuiCardContent"]': {
+    '& div[class*="MuiCardContent"]': {
+      padding: '16px',
       margin: '-6px',
     },
-    '& div[class^="MuiCardMedia"]': {
+    '& div[class*="MuiCardMedia"]': {
       margin: '-6px',
     },
-    '& div[class^="MuiCardContent"]:not(:first-child)': {
+    '& div[class*="MuiCardContent"]:not(:first-child)': {
       borderTop: 'solid 1px #fff',
     },
   },

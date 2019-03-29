@@ -1,25 +1,27 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { decorator } from '../../../.storybook/config';
 import Card from './Card';
 import Button from '../Button';
 import Typography from '../Typography';
 
 storiesOf('Card', module)
+  .addDecorator(decorator)
   .add('with content', () => (
     <Card>
       <Card.Content>
-        Test
+        <Typography content='Test' />
       </Card.Content>
     </Card>
   ))
   .add('with multiple content', () => (
     <Card>
       <Card.Content>
-        Test
+        <Typography content='Test' />
       </Card.Content>
       <Card.Content>
-        Test
+        <Typography content='Test' />
       </Card.Content>
     </Card>
   ))
@@ -36,6 +38,15 @@ storiesOf('Card', module)
 	))
   .add('with button', () => (
     <Card>
-      <Button content='Button' float='right' variant='contained' />
+      <Card.Content style={{display: 'inline-block', padding: '12px 16px'}}>
+        <Typography inline content='January 31' />
+      </Card.Content>
+      <Button
+        color='#000'
+        backgroundColor='#fff'
+        content='Button'
+        float='right'
+        variant='contained'
+      />
     </Card>
   ))

@@ -15,10 +15,13 @@ const styles = theme => ({
     left: '12px',
     position: 'fixed',
     right: '12px',
-    '& button': {
+    '& button[class*="MuiBottomNavigationAction-root"]': {
       color: '#fff',
       padding: '15px',
-    }
+    },
+    '& button[class*="MuiBottomNavigationAction-selected"]': {
+      color: '#AFD35F',
+    },
   },
 });
 

@@ -1,9 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { decorator } from '../../../.storybook/config';
 import Typography from './Typography';
 
 storiesOf('Typography', module)
+  .addDecorator(decorator)
   .add('with content', () => (
     <Typography content='Text' />
   ))
