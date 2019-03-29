@@ -1,0 +1,37 @@
+{
+  "name": "@highlands/highlands-ui-icons",
+  "author": "Church of the Highlands",
+  "version": "1.0.0",
+  "description": "Highlands Svg Icons converted React components.",
+  "main": "dist/index.js",
+  "keywords": [
+    "icons",
+    "react",
+    "svg",
+    "components",
+    "highlands"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/highlands/highlands-ui.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/highlands/highlands-ui/issues"
+  },
+  "homepage": "https://github.com/highlands/highlands-ui/packages/highlands-ui-icons",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^4.1.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.2.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  }
+}
