@@ -11,7 +11,6 @@ const styles = theme => ({
     backgroundColor: '#046',
     borderRadius: '24px',
     bottom: '12px',
-    //height: '53px',
     height: 'unset',
     left: '12px',
     position: 'fixed',
