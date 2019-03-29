@@ -3,6 +3,9 @@ import { addDecorator, storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { decorator } from '../../../.storybook/config';
 import Button from './Button';
+import {
+  Icon,
+} from '@material-ui/core';
 
 storiesOf('Button', module)
   .addDecorator(decorator)
@@ -31,6 +34,8 @@ storiesOf('Button', module)
  ))
   .add('as contained with icon', () => (
     <Button
+      backgroundColor='#fff'
+      color='#000'
       content='Button'
       icon='add'
       iconBefore
@@ -48,10 +53,14 @@ storiesOf('Button', module)
   .add('with no border and blue icon', () => (
     <Button
       borderWidth='0px'
-      content='Button'
+      content='Click Here'
       icon='add'
       iconBefore
       iconColor='#1489CB'
       onClick={action('clicked')}
-    />
+    >
+      <Icon>
+        chevron_right
+      </Icon>
+    </Button>
  ))
