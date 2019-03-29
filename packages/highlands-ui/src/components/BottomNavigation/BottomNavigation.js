@@ -11,17 +11,24 @@ const styles = theme => ({
     backgroundColor: '#046',
     borderRadius: '24px',
     bottom: '12px',
-    height: '53px',
+    //height: '53px',
+    height: 'unset',
     left: '12px',
     position: 'fixed',
     right: '12px',
     '& button[class*="MuiBottomNavigationAction-root"]': {
+      alignSelf: 'start',
       color: '#fff',
       padding: '15px',
     },
     '& button[class*="MuiBottomNavigationAction-selected"]': {
       color: '#AFD35F',
     },
+    '& div[class*="MuiCollapse-container"]': {
+    },
+  },
+  nav: {
+    backgroundColor: 'unset',
   },
 });
 
@@ -30,23 +37,29 @@ function DefaultBottomNavigation(props) {
     border,
     borderRadius,
     color,
+    collapse,
     children,
     classes,
     ...otherProps
   } = props;
 
   return (
-    <BottomNavigation
+    <div
       className={classes.root}
       style={{
         color: color,
         border: border,
         borderRadius: borderRadius,
       }}
-      {...otherProps}
     >
-      {children}
-    </BottomNavigation>
+      <BottomNavigation
+        className={classes.nav}
+        {...otherProps}
+      >
+        {children}
+      </BottomNavigation>
+      {collapse}
+    </div>
   );
 }
 
