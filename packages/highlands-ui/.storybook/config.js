@@ -34,7 +34,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: 'proxima-nova, Helvetica, Arial, sans-serif',
-    htmlFontSize: 16,
+    htmlFontSize: 14,
   }
 });
 
