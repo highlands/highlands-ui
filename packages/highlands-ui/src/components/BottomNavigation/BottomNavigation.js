@@ -20,8 +20,8 @@ const styles = theme => ({
       color: '#fff',
       padding: '15px',
     },
-    '& button[class*="MuiBottomNavigationAction-selected"]': {
-      color: '#AFD35F',
+    '& button[class*="MuiBottomNavigationAction-selected"] svg path': {
+      fill: '#AFD35F',
     },
     '& div[class*="MuiCollapse-container"]': {
     },
