@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import {
   Button,
-  Icon
 } from '@material-ui/core/';
 
 const styles = theme => ({
@@ -14,6 +13,7 @@ const styles = theme => ({
     color: '#fff',
     fontWeight: 300,
     textTransform: 'none',
+    lineHeight: 1,
   },
   left: {
     marginRight: theme.spacing.unit
@@ -33,6 +33,7 @@ function DefaultButton(props) {
     color,
     content,
     float,
+    fontSize,
     fontWeight,
     href,
     icon,
@@ -46,17 +47,17 @@ function DefaultButton(props) {
 
   if (icon && iconBefore) {
     renderContent = <React.Fragment>
-      <Icon className={classes.left} style={{color: iconColor}}>
+      <i className={classes.left} style={{color: iconColor}}>
         {icon}
-      </Icon>
+      </i>
       {content}
     </React.Fragment>
   } else if (icon && iconAfter) {
     renderContent = <React.Fragment>
       {content}
-      <Icon className={classes.right} style={{color: iconColor}}>
+      <i className={classes.right} style={{color: iconColor}}>
         {icon}
-      </Icon>
+      </i>
     </React.Fragment>
   } else {
     renderContent = <React.Fragment>
@@ -73,6 +74,7 @@ function DefaultButton(props) {
         borderRadius: borderRadius,
         borderWidth: borderWidth,
         float: float,
+        fontSize: fontSize,
         fontWeight: fontWeight,
       }}
       variant='outlined'

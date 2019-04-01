@@ -4,8 +4,10 @@ import { action } from '@storybook/addon-actions';
 import { decorator } from '../../../.storybook/config';
 import Button from './Button';
 import {
-  Icon,
-} from '@material-ui/core';
+  CaretIcon,
+  LocationsIcon,
+  DrawerIcon,
+} from '@highlands/highlands-ui-icons';
 
 storiesOf('Button', module)
   .addDecorator(decorator)
@@ -18,7 +20,7 @@ storiesOf('Button', module)
   .add('as default with icon', () => (
     <Button
       content='Button'
-      icon='add'
+      icon={<LocationsIcon />}
       iconBefore
       onClick={action('clicked')}
     />
@@ -37,7 +39,7 @@ storiesOf('Button', module)
       backgroundColor='#fff'
       color='#000'
       content='Button'
-      icon='add'
+      icon={<LocationsIcon />}
       iconBefore
       onClick={action('clicked')}
       variant='contained'
@@ -53,14 +55,11 @@ storiesOf('Button', module)
   .add('with no border and blue icon', () => (
     <Button
       borderWidth='0px'
-      content='Click Here'
-      icon='add'
+      content={<span>Click Here&nbsp;&nbsp;<CaretIcon /></span>}
+      fontSize={20}
+      icon={<LocationsIcon />}
       iconBefore
       iconColor='#1489CB'
       onClick={action('clicked')}
-    >
-      <Icon>
-        chevron_right
-      </Icon>
-    </Button>
+    />
  ))
