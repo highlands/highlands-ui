@@ -35,6 +35,6 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.5"
   }
 }
