@@ -1,7 +1,7 @@
 import React from "react";
 
 const SvgNavMediaIcon = props => (
-  <svg height={27.56} width={27.57} {...props}>
+  <svg height={28} width={28} {...props}>
     <defs>
       <path
         id="nav-media-icon_svg__a"

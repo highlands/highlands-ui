@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 28.2 14.9" style="enable-background:new 0 0 28.2 14.9;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-</style>
-<g>
-	<g>
-		<g>
-			<path id="path-2" class="st0" d="M27.3,14.8c-0.2,0-0.4-0.1-0.5-0.2L14,1.8L1.3,14.6c-0.3,0.3-0.8,0.3-1.1,0
-				c-0.3-0.3-0.3-0.8,0-1.1L13.5,0.2c0.3-0.3,0.8-0.3,1.1,0l13.3,13.3c0.3,0.3,0.3,0.8,0,1.1C27.7,14.7,27.5,14.8,27.3,14.8z"/>
-		</g>
-	</g>
-</g>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="26" width="29">
+  <defs>
+    <path id="path-1" opacity="1" fill-rule="evenodd" d="M27.75,20.4 C27.550000000000004,20.4 27.35,20.3 27.25,20.200000000000003 L14.45,7.3999999999999995 L1.7499999999999998,20.2 C1.4499999999999997,20.5 0.9499999999999997,20.5 0.6499999999999997,20.2 C0.34999999999999964,19.9 0.34999999999999964,19.4 0.6499999999999997,19.1 L13.95,5.8 C14.25,5.5 14.749999999999998,5.5 15.049999999999997,5.8 L28.35,19.1 C28.65,19.4 28.65,19.9 28.35,20.2 C28.15,20.299999999999997 27.950000000000003,20.4 27.75,20.4Z"/>
+  </defs>
+  <g opacity="1">
+    <g opacity="1">
+      <use xlink:href="#path-1" fill="rgb(255,255,255)" fill-opacity="1"/>
+    </g>
+  </g>
 </svg>

@@ -1,13 +1,16 @@
 import React from "react";
 
 const SvgNavMoreIcon = props => (
-  <svg viewBox="0 0 28.2 14.9" {...props}>
-    <path
-      d="M27.3 14.8c-.2 0-.4-.1-.5-.2L14 1.8 1.3 14.6c-.3.3-.8.3-1.1 0-.3-.3-.3-.8 0-1.1L13.5.2c.3-.3.8-.3 1.1 0l13.3 13.3c.3.3.3.8 0 1.1-.2.1-.4.2-.6.2z"
-      fillRule="evenodd"
-      clipRule="evenodd"
-      fill="#fff"
-    />
+  <svg height={26} width={29} {...props}>
+    <defs>
+      <path
+        id="nav-more-icon_svg__a"
+        opacity={1}
+        fillRule="evenodd"
+        d="M27.75 20.4c-.2 0-.4-.1-.5-.2L14.45 7.4 1.75 20.2c-.3.3-.8.3-1.1 0-.3-.3-.3-.8 0-1.1l13.3-13.3c.3-.3.8-.3 1.1 0l13.3 13.3c.3.3.3.8 0 1.1-.2.1-.4.2-.6.2z"
+      />
+    </defs>
+    <use xlinkHref="#nav-more-icon_svg__a" fill="#FFF" />
   </svg>
 );
 
