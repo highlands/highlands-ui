@@ -3,7 +3,7 @@
   "author": "Church of the Highlands",
   "version": "1.0.0",
   "description": "React components based on material-ui.",
-  "main": "dist/index.js",
+  "main": "dist/highlands-ui.js",
   "keywords": [
     "material-ui",
     "react",
@@ -20,22 +20,28 @@
   },
   "homepage": "https://github.com/highlands/highlands-ui/packages/highlands-ui",
   "scripts": {
-    "build": "mkdir -p dist && cp -r src/* dist/",
+    "build": "webpack --mode production",
     "release": "yarn publish",
     "storybook": "start-storybook -p 9001"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
     "@emotion/cache": "^10.0.0",
     "@emotion/core": "^10.0.5",
     "@emotion/styled": "^10.0.5",
     "@emotion/utils": "^0.11.1",
-    "@storybook/addon-actions": "^5.0.5",
-    "@storybook/react": "^5.0.5",
-    "@storybook/theming": "^5.0.5",
+    "@storybook/addon-actions": "^4.1.4",
+    "@storybook/react": "^4.1.4",
     "babel-loader": "^8.0.5",
-    "webpack": "^4.29.6"
+    "css-loader": "^1.0.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
   },
   "dependencies": {
     "@highlands/highlands-ui-icons": "^1.0.1",
