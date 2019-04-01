@@ -8,7 +8,6 @@ storiesOf('TextField', module)
   .addDecorator(decorator)
 	.add('as default', () => (
     <TextField
-      color='pink'
       label='Text Field'
       placeholder='Text Field'
       name='text-field'

@@ -35,6 +35,7 @@ const styles = theme => ({
 function DefaultTextField(props) {
   const {
     classes,
+    color,
     defaultValue,
     id,
     label,
