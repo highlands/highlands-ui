@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/highlands/highlands-ui/packages/highlands-ui",
   "scripts": {
-    "build": "cp -r src/* dist/",
+    "build": "mkdir -p dist && cp -r src/* dist/",
+    "release": "yarn publish",
     "storybook": "start-storybook -p 9001"
   },
   "devDependencies": {
@@ -42,5 +43,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.5",
     "react-dom": "^16.8.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
