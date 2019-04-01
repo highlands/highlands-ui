@@ -20,35 +20,20 @@
   },
   "homepage": "https://github.com/highlands/highlands-ui/packages/highlands-ui",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "storybook": "start-storybook -p 9001",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "build": "cp -r src/* dist/",
+    "storybook": "start-storybook -p 9001"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.0.0",
     "@emotion/cache": "^10.0.0",
     "@emotion/core": "^10.0.5",
     "@emotion/styled": "^10.0.5",
     "@emotion/utils": "^0.11.1",
     "@storybook/addon-actions": "^5.0.5",
     "@storybook/react": "^5.0.5",
-    "@storybook/theming": "^5.0.5",
-    "babel-loader": "^8.0.5",
-    "css-loader": "^1.0.1",
-    "docz": "^0.13.7",
-    "docz-theme-default": "^0.13.7",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0"
+    "@storybook/theming": "^5.0.5"
   },
   "dependencies": {
+    "@highlands/highlands-ui-icons": "^1.0.1",
     "@material-ui/core": "^3.9.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.5",
