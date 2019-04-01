@@ -6,8 +6,14 @@ import BottomNavigation from './BottomNavigation';
 import Button from '../Button';
 import {
   Collapse,
-  Icon,
 } from '@material-ui/core';
+import {
+  NavBibleIcon,
+  NavGroupsIcon,
+  NavHomeIcon,
+  NavMediaIcon,
+  NavMoreIcon,
+} from '@highlands/highlands-ui-icons';
 
 storiesOf('Bottom Navigation', module)
   .addDecorator(decorator)
@@ -38,25 +44,25 @@ storiesOf('Bottom Navigation', module)
           onChange={(e, value) => setValue(value)}
         >
           <BottomNavigation.Action
-            icon={<Icon>home</Icon>}
+            icon={<NavHomeIcon />}
             value='home'
           />
           <BottomNavigation.Action
-            icon={<Icon>book</Icon>}
+            icon={<NavBibleIcon />}
             value='bible'
           />
           <BottomNavigation.Action
-            icon={<Icon>keyboard_arrow_up</Icon>}
+            icon={<NavMoreIcon />}
             onClick={() => setExpanded(!expanded)}
             aria-expanded={expanded}
             aria-label="More"
           />
           <BottomNavigation.Action
-            icon={<Icon>people_outline</Icon>}
+            icon={<NavGroupsIcon />}
             value='groups'
           />
           <BottomNavigation.Action
-            icon={<Icon>play_circle_outline</Icon>}
+            icon={<NavMediaIcon />}
             value='media'
           />
         </BottomNavigation>
