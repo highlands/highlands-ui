@@ -38,7 +38,7 @@ storiesOf('Card', module)
 	))
   .add('with button', () => (
     <Card>
-      <Card.Content style={{display: 'inline-block', padding: '12px 16px'}}>
+      <Card.Content style={{display: 'inline-block', padding: '8px 16px'}}>
         <Typography inline content='January 31' />
       </Card.Content>
       <Button

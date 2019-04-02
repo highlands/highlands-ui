@@ -8,6 +8,7 @@ import {
   Collapse,
 } from '@material-ui/core';
 import {
+  CaretIcon,
   NavBibleIcon,
   NavGroupsIcon,
   NavHomeIcon,
@@ -33,9 +34,7 @@ storiesOf('Bottom Navigation', module)
               <div style={{height: '150px'}}>
                 <Button
                   borderWidth='0px'
-                  content='Give'
-                  icon='chevron_right'
-                  iconAfter
+                  content={<span>Give&nbsp;&nbsp;<CaretIcon /></span>}
                   onClick={action('clicked')}
                 />
               </div>
