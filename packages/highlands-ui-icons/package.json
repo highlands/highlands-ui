@@ -1,9 +1,9 @@
 {
   "name": "@highlands/highlands-ui-icons",
   "author": "Church of the Highlands",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Highlands Svg Icons converted React components.",
-  "main": "dist/index.js",
+  "main": "dist/highlands-ui-icons.js",
   "keywords": [
     "icons",
     "react",
@@ -22,19 +22,32 @@
   "homepage": "https://github.com/highlands/highlands-ui/packages/highlands-ui-icons",
   "scripts": {
     "start": "webpack --watch",
-    "build": "mkdir -p dist && cp -r src/* dist/",
+    "build": "webpack --mode production",
     "release": "yarn publish",
-    "src:icons": "svgr -d src svgs && create-index -r -i ./src"
+    "src:icons": "svgr --template ./templateSvgIcon.js -d src/icons svgs && create-index -r -i ./src"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@svgr/babel-preset": "^4.1.0",
+    "@svgr/cli": "^4.1.0",
+    "babel-loader": "^8.0.5",
     "create-index": "^2.4.0",
+    "css-loader": "^1.0.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.2.0"
   },
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  },
   "publishConfig": {
     "access": "public"
-  },
-  "peerDependencies": {
-    "react": "^16.8.5"
   }
 }
