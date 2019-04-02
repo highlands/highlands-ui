@@ -32,8 +32,9 @@
     "@emotion/core": "^10.0.5",
     "@emotion/styled": "^10.0.5",
     "@emotion/utils": "^0.11.1",
-    "@storybook/addon-actions": "^4.1.4",
-    "@storybook/react": "^4.1.4",
+    "@storybook/addon-actions": "^5.0.5",
+    "@storybook/react": "^5.0.5",
+    "@storybook/theming": "^5.0.5",
     "babel-loader": "^8.0.5",
     "css-loader": "^1.0.1",
     "node-sass": "^4.11.0",
@@ -46,6 +47,7 @@
   "dependencies": {
     "@highlands/highlands-ui-icons": "^1.0.1",
     "@material-ui/core": "^3.9.2",
+    "clsx": "^1.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.5",
     "react-dom": "^16.8.5"
