@@ -1,7 +1,7 @@
 {
   "name": "@highlands/highlands-ui",
   "author": "Church of the Highlands",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React components based on material-ui.",
   "main": "dist/highlands-ui.js",
   "keywords": [
