@@ -13,7 +13,3 @@ npm install @highlands/highlands-ui
 // with yarn
 yarn add @highlands/highlands-ui
 ```
-
-## Documentation
-
-[The documentation](https://material-ui.com/)
